@@ -44,6 +44,7 @@ const Continue = ()=>{
     setMonthcolor('unset')
     
     
+    
 }
 const Confirm = (e)=>{
     e.preventDefault()
@@ -88,11 +89,11 @@ const Confirm = (e)=>{
 }
 
   return (
-    <div className=' h-screen sm:grid sm:grid-cols-2 lg:grid-cols-3'>
+    <div className='font-space min-h-screen  sm:grid sm:grid-cols-2 lg:grid-cols-3'>
         <div className=" h-1/4 sm:col-span-1 sm:h-screen ">
             <img className='h-full w-full' src={desktop} alt="" />
         </div>
-        <div className=" bg-light h-3/4 sm:col-span-1  sm:h-screen lg:col-span-2">
+        <div className=" h-3/4 sm:col-span-1  sm:h-screen lg:col-span-2">
            {
             !completed  &&
             <form className='flex flex-col items-center justify-center h-full gap-6'>
@@ -120,7 +121,7 @@ const Confirm = (e)=>{
                </div>
                 <div className='text-red-500 text-xs'>{erromonth}</div>
                 </div>
-                <button className='bg-indigo-900 rounded-md w-64 h-10 text-white' type='submit' onClick={Confirm}>Confirm</button>
+                <button className=' bg-darkViolet rounded-md w-64 h-10 text-white' type='submit' onClick={Confirm}>Confirm</button>
             </form>
             }
               {
